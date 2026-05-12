@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><b>MONARK UNIVERSITY</b></title>
+  <meta name="description" content="Monark University — Excellence in education, research and innovation." />
+  <style>
+    :root{--accent:#0f62fe;--muted:#6b7280;--bg:#f8fafc;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#0f1724; line-height:1.5}
+    a{color:var(--accent); text-decoration:none}
+
+    header{background:linear-gradient(180deg, rgba(15,98,a254,0.08), transparent); backdrop-filter:saturate(120%); position:sticky; top:0; z-index:40}
+    .container{max-width:1100px; margin:0 auto; padding:1rem}
+    .nav{display:flex; gap:1rem; align-items:center; justify-content:space-between}
+    .brand{display:flex; gap:.75rem; align-items:center}
+    .logo{width:44px; height:44px; display:grid; place-items:center; border-radius:10px; background:linear-gradient(135deg,var(--accent),#7c3aed); color:white; font-weight:700}
+    nav ul{display:flex; gap:1rem; list-style:none; margin:0; padding:0}
+    .cta{padding:.5rem .9rem; border-radius:8px; background:var(--accent); color:white; font-weight:600}
+  
+    .hero{display:grid; grid-template-columns:1fr 420px; gap:2rem; align-items:center; padding:3rem 0}
+    .hero h1{font-size:2rem; margin:.2rem 0}
+    .lead{color:var(--muted)}
+    .search-card{background:var(--card); padding:1rem; border-radius:12px; box-shadow:0 6px 18px rgba(11,15,25,0.06)}
+    .programs{display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1rem}
+    .prog{background:linear-gradient(180deg,#ffffff, #fbfdff); padding:1rem; border-radius:10px; border:1px solid rgba(2,6,23,0.03)}
+    
+    section{padding:3rem 0}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:1rem}
+    .card{background:var(--card); padding:1.25rem; border-radius:12px; box-shadow:0 8px 30px rgba(2,6,23,0.04)}
+
+    footer{padding:2rem 0; background:transparent}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .grid-3{grid-template-columns:1fr}
+      .programs{grid-template-columns:repeat(2,1fr)}
+      nav ul{display:none}
+      .mobile-toggle{display:block}
+    }
+    @media (min-width:901px){.mobile-toggle{display:none}}
+
+    .muted{color:var(--muted)}
+    .pill{display:inline-block; padding:.25rem .5rem; border-radius:999px; background:#eef2ff; font-weight:600; font-size:.8rem}
+    form input, form textarea{width:100%; padding:.7rem; border-radius:8px; border:1px solid #e6edf3; margin-top:.5rem}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:1rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">M</div>
+        <div>
+          <div style="font-weight:700">Monark University</div>
+          <div style="font-size:.8rem; color:var(--muted)">Knowledge • Research • Impact</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex; gap:.5rem; align-items:center">
+        <a class="cta" href="#admissions">Apply</a>
+        <button class="mobile-toggle" aria-label="open menu" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+    <div id="mobileMenu" style="display:none; background:var(--card); border-top:1px solid rgba(2,6,23,0.04)">
+      <div class="container" style="padding-top:.75rem;padding-bottom:.75rem">
+        <a href="#about" style="display:block;padding:.6rem 0">About</a>
+        <a href="#academics" style="display:block;padding:.6rem 0">Academics</a>
+        <a href="#research" style="display:block;padding:.6rem 0">Research</a>
+        <a href="#admissions" style="display:block;padding:.6rem 0">Admissions</a>
+        <a href="#contact" style="display:block;padding:.6rem 0">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div>
+        <span class="pill">Established 1968</span>
+        <h1>Monark University — shaping future leaders in science, technology & the arts</h1>
+        <p class="lead">A community of curious minds and fearless innovators. Explore undergraduate, postgraduate and research programmes designed to stretch your potential.</p>
+
+        <div style="display:flex; gap:1rem; margin-top:1rem; flex-wrap:wrap">
+          <a class="cta" href="#admissions">Get Started</a>
+          <a href="#programs" style="align-self:center; font-weight:600">View Programs →</a>
+        </div>
+
+        <div class="programs" id="programs">
+          <div class="prog">
+            <strong>B.Tech &nbsp;</strong>
+            <div class="muted" style="font-size:.9rem">Engineering, AI & Robotics</div>
+          </div>
+          <div class="prog">
+            <strong>MBA &nbsp;</strong>
+            <div class="muted" style="font-size:.9rem">Business, Analytics & Entrepreneurship</div>
+          </div>
+          <div class="prog">
+            <strong>PhD &nbsp;</strong>
+            <div class="muted" style="font-size:.9rem">Interdisciplinary research</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="search-card">
+        <h3 style="margin:0 0 .5rem 0">Quick find</h3>
+        <p class="muted" style="margin:0 0 1rem 0">Search programmes, departments or people</p>
+        <form onsubmit="event.preventDefault(); alert('Search feature demo — replace with real search.');">
+          <input placeholder="Search programmes, faculty, or events" />
+        </form>
+
+        <div style="margin-top:1rem">
+          <div style="font-weight:700; font-size:.95rem">Upcoming</div>
+          <div class="muted" style="font-size:.9rem">Open House — Sept 20, 2025</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about">
+      <div style="display:flex; gap:2rem; align-items:center; flex-wrap:wrap">
+        <div style="flex:1; min-width:260px">
+          <h2>About Monark University</h2>
+          <p class="muted">Monark University combines research-led teaching with hands-on learning. Our faculty are passionate educators and active researchers working on real-world problems.</p>
+          <ul>
+            <li>Strong industry collaborations</li>
+            <li>State-of-the-art labs and makerspaces</li>
+            <li>Scholarships and international exchange</li>
+          </ul>
+        </div>
+        <div style="width:360px; min-width:220px">
+          <div style="border-radius:12px; overflow:hidden; box-shadow:0 12px 40px rgba(2,6,23,0.06)">
+            <img src="https://via.placeholder.com/720x460.png?text=Monark+University+Campus" alt="Campus" style="width:100%; display:block" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="academics">
+      <h2>Academics</h2>
+      <div class="grid-3" style="margin-top:1rem">
+        <div class="card">
+          <h3>Undergraduate</h3>
+          <p class="muted">Bachelor programmes with project-based learning, internships and capstones.</p>
+          <a href="#">Explore UG →</a>
+        </div>
+        <div class="card">
+          <h3>Postgraduate</h3>
+          <p class="muted">Specialised masters and professional courses co-designed with industry.</p>
+          <a href="#">Explore PG →</a>
+        </div>
+        <div class="card">
+          <h3>Research</h3>
+          <p class="muted">Doctoral programmes across sciences, engineering, humanities and business.</p>
+          <a href="#">Research →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research & Innovation</h2>
+      <p class="muted">Monark's research centers focus on AI, renewable energy, public health and creative technologies. We encourage interdisciplinary teams and open collaboration.</p>
+
+      <div style="margin-top:1rem" class="grid-2">
+        <div class="card">
+          <h4>Center for AI & Robotics</h4>
+          <p class="muted">Robotics labs, applied AI projects, and industry partnerships.</p>
+        </div>
+        <div class="card">
+          <h4>Monark Sustainability Lab</h4>
+          <p class="muted">Research in energy systems, circular economy and climate resilience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="admissions">
+      <h2>Admissions</h2>
+      <p class="muted">Applications for 2025–26 are open. Scholarships available for meritorious students.</p>
+
+      <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem">
+        <div style="flex:1; min-width:280px" class="card">
+          <h3>How to apply</h3>
+          <ol class="muted">
+            <li>Create an account</li>
+            <li>Choose a programme and submit documents</li>
+            <li>Receive decision and enrol</li>
+          </ol>
+          <a class="cta" href="#">Apply now</a>
+        </div>
+
+        <div style="min-width:300px" class="card">
+          <h3>Contact Admissions</h3>
+          <p class="muted">Email: admissions@monark.edu | Phone: +91 98765 43210</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact & Visit</h2>
+      <div class="grid-2" style="margin-top:1rem">
+        <div class="card">
+          <h4>Send us a message</h4>
+          <form onsubmit="event.preventDefault(); alert('Thanks — this is a demo contact form. Replace with server endpoint.');">
+            <input placeholder="Your name" required />
+            <input placeholder="Email" required />
+            <textarea placeholder="Your message" rows="5"></textarea>
+            <div style="margin-top:.75rem"><button class="cta" type="submit">Send</button></div>
+          </form>
+        </div>
+        <div class="card">
+          <h4>Visit our campus</h4>
+          <p class="muted">123 Monark Avenue, Knowledge City</p>
+          <div style="margin-top:1rem"><iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.949!2d-122.084249!3d37.422065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDI1JzQ2LjAiTiAxMjLCsDA1JzA0LjAiVw!5e0!3m2!1sen!2sus!4v1600000000000" width="100%" height="220" style="border:0; border-radius:8px" allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap">
+      <div>
+        <div style="font-weight:700">Monark University</div>
+        <div class="muted" style="font-size:.9rem">© 2025 Monark University. All rights reserved.</div>
+      </div>
+      <div class="muted">Follow: <a href="#">Twitter</a> · <a href="#">LinkedIn</a></div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu(){
+      const m = document.getElementById('mobileMenu');
+      m.style.display = m.style.display === 'none' || m.style.display === '' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
+
+</body>
+</html>
